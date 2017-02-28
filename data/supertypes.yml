@@ -1,0 +1,25 @@
+# Groups used for navigation.
+navigation_document_supertype:
+  - id: guidance
+    document_types:
+      - answer
+      - contact
+      - detailed_guide
+      - document_collection
+      - form
+      - guidance
+      - guide
+      - licence
+      - local_transaction
+      - manual
+      - map
+      - notice
+      - place
+      - programme
+      - promotional
+      - regulation
+      - simple_smart_answer
+      - smart_answer
+      - statutory_guidance
+      - transaction
+      - travel_advice
