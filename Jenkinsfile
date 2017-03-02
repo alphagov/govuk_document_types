@@ -15,10 +15,6 @@ node {
       govuk.mergeMasterBranch()
     }
 
-    stage("Set up content schema dependency") {
-      govuk.contentSchemaDependency()
-    }
-
     stage('Bundle') {
       echo 'Bundling'
       sh("bundle install --path ${JENKINS_HOME}/bundles/${JOB_NAME}")
