@@ -15,5 +15,13 @@ describe GovukDocumentTypes do
         end
       end
     end
+
+    it "reserves 'other' for document types without a group" do
+      GovukDocumentTypes::DATA.each do |_, supertypes|
+        supertypes.each do |supertype|
+          expect(supertype.fetch("id")).not_to eql("other")
+        end
+      end
+    end
   end
 end
