@@ -3,9 +3,9 @@ require "spec_helper"
 describe GovukDocumentTypes do
   describe 'supertypes.yml' do
     it "does not have duplicates across supertypes" do
-      GovukDocumentTypes::DATA.each do |supertype_name, supertypes|
-        all_supertypes = supertypes.reduce([]) do |a, supertype|
-          a + supertype['document_types']
+      GovukDocumentTypes::DATA.each do |supertype_name, definition|
+        all_supertypes = definition["items"].reduce([]) do |a, supertype|
+          a + supertype["document_types"]
         end
 
         all_supertypes.uniq.each do |e|
@@ -17,8 +17,8 @@ describe GovukDocumentTypes do
     end
 
     it "reserves 'other' for document types without a group" do
-      GovukDocumentTypes::DATA.each do |_, supertypes|
-        supertypes.each do |supertype|
+      GovukDocumentTypes::DATA.each do |_, definition|
+        definition["items"].each do |supertype|
           expect(supertype.fetch("id")).not_to eql("other")
         end
       end
