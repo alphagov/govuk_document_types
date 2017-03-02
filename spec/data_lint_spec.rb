@@ -25,10 +25,11 @@ describe GovukDocumentTypes do
 
     it "reserves the default supertype for document types without a group" do
       GovukDocumentTypes::DATA.each do |name, definition|
+        default = definition["default"]
         definition["items"].each do |supertype|
-          expect(supertype.fetch("id")).not_to eql(definition["default"]),
-            "'#{name}' defines a supertype name '#{definition["default"]}', " +
-              "which clashes with the default supertype name"
+          expect(supertype.fetch("id")).not_to eql(default),
+            "'#{name}' defines a supertype name '#{default}', which clashes " +
+            "with the default supertype name"
         end
       end
     end

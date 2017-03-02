@@ -9,13 +9,13 @@ describe GovukDocumentTypes do
     it 'returns a supertype for a known document type' do
       supertypes = GovukDocumentTypes.supertypes(document_type: 'detailed_guide')
 
-      expect(supertypes).to eql("navigation_document_supertype" => "guidance")
+      expect(supertypes).to include("navigation_document_supertype" => "guidance")
     end
 
     it 'returns the default supertype for an unknown document type' do
       supertypes = GovukDocumentTypes.supertypes(document_type: 'something_not_there')
 
-      expect(supertypes).to eql("navigation_document_supertype" => "other")
+      expect(supertypes).to include("navigation_document_supertype" => "other")
     end
   end
 end
