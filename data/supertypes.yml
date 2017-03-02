@@ -1,25 +1,50 @@
 # Groups used for navigation.
 navigation_document_supertype:
-  - id: guidance
-    document_types:
-      - answer
-      - contact
-      - detailed_guide
-      - document_collection
-      - form
-      - guidance
-      - guide
-      - licence
-      - local_transaction
-      - manual
-      - map
-      - notice
-      - place
-      - programme
-      - promotional
-      - regulation
-      - simple_smart_answer
-      - smart_answer
-      - statutory_guidance
-      - transaction
-      - travel_advice
+  default: other
+  items:
+    - id: guidance
+      document_types:
+        - answer
+        - contact
+        - detailed_guide
+        - document_collection
+        - form
+        - guidance
+        - guide
+        - licence
+        - local_transaction
+        - manual
+        - map
+        - notice
+        - place
+        - programme
+        - promotional
+        - regulation
+        - simple_smart_answer
+        - smart_answer
+        - statutory_guidance
+        - transaction
+        - travel_advice
+# Used to distinguish page used mainly for navigation from content pages
+user_journey_document_supertype:
+  # Most pages are primarily for displaying content rather than navigation
+  default: thing
+  items:
+    - id: finding
+      document_types:
+        - business_support_finder
+        - document_collection
+        - finder
+        - homepage
+        - license_finder
+        - mainstream_browse_page
+        - organisation
+        - policy
+        - policy_area
+        - search
+        - service_manual_homepage
+        - service_manual_topic
+        - services_and_information
+        - taxon
+        - topic
+        - topical_event

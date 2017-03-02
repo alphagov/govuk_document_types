@@ -3,9 +3,9 @@ require "spec_helper"
 describe GovukDocumentTypes do
   describe 'supertypes.yml' do
     it "does not have duplicates across supertypes" do
-      GovukDocumentTypes::DATA.each do |supertype_name, supertypes|
-        all_supertypes = supertypes.reduce([]) do |a, supertype|
-          a + supertype['document_types']
+      GovukDocumentTypes::DATA.each do |supertype_name, definition|
+        all_supertypes = definition["items"].reduce([]) do |a, supertype|
+          a + supertype["document_types"]
         end
 
         all_supertypes.uniq.each do |e|
@@ -16,10 +16,20 @@ describe GovukDocumentTypes do
       end
     end
 
-    it "reserves 'other' for document types without a group" do
-      GovukDocumentTypes::DATA.each do |_, supertypes|
-        supertypes.each do |supertype|
-          expect(supertype.fetch("id")).not_to eql("other")
+    it "defines a default supertype for all document types" do
+      GovukDocumentTypes::DATA.each do |name, definition|
+        expect(definition["default"]).not_to be_nil,
+          "No default value provided for '#{name}'"
+      end
+    end
+
+    it "reserves the default supertype for document types without a group" do
+      GovukDocumentTypes::DATA.each do |name, definition|
+        default = definition["default"]
+        definition["items"].each do |supertype|
+          expect(supertype.fetch("id")).not_to eql(default),
+            "'#{name}' defines a supertype name '#{default}', which clashes " +
+            "with the default supertype name"
         end
       end
     end

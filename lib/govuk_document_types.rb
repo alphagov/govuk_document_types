@@ -7,12 +7,12 @@ module GovukDocumentTypes
   def self.supertypes(document_type:)
     types = {}
 
-    DATA.each do |name, ary|
-      group_data = ary.find do |supertype|
+    DATA.each do |name, definition|
+      group_data = definition["items"].find do |supertype|
         supertype['document_types'].include?(document_type)
       end
 
-      type = (group_data && group_data["id"]) || "other"
+      type = (group_data && group_data["id"]) || definition["default"]
       types.merge!(name => type)
     end
 
