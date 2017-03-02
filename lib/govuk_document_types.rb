@@ -12,7 +12,7 @@ module GovukDocumentTypes
         supertype['document_types'].include?(document_type)
       end
 
-      type = (group_data && group_data["id"]) || "other"
+      type = (group_data && group_data["id"]) || definition["default"]
       types.merge!(name => type)
     end
 

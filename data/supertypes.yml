@@ -1,5 +1,6 @@
 # Groups used for navigation.
 navigation_document_supertype:
+  default: other
   items:
     - id: guidance
       document_types:
