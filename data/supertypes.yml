@@ -1,5 +1,6 @@
-# Groups used for navigation.
 navigation_document_supertype:
+  name: "Navigation document type"
+  description: "Used to filter pages on the new taxonomy-based navigation pages"
   default: other
   items:
     - id: guidance
@@ -25,8 +26,10 @@ navigation_document_supertype:
         - statutory_guidance
         - transaction
         - travel_advice
-# Used to distinguish page used mainly for navigation from content pages
+
 user_journey_document_supertype:
+  name: "User journey"
+  description: "Used to distinguish pages used mainly for navigation (finding) from content pages (thing)"
   # Most pages are primarily for displaying content rather than navigation
   default: thing
   items:
