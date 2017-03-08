@@ -16,7 +16,6 @@ navigation_document_supertype:
         - local_transaction
         - manual
         - map
-        - notice
         - place
         - programme
         - promotional
