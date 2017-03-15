@@ -50,3 +50,136 @@ user_journey_document_supertype:
         - taxon
         - topic
         - topical_event
+
+email_document_supertype:
+  name: "Email document type"
+  description: "High level group for email subscriptions use to identify publications and announcement"
+  default: other
+  items:
+    - id: "publications"
+      document_types:
+        - closed_consultation
+        - consultation
+        - consultation_outcome
+        - corporate_report
+        - correspondence
+        - decision
+        - foi_release
+        - form
+        - guidance
+        - impact_assessment
+        - independent_report
+        - international_treaty
+        - map
+        - national_statistics
+        - notice
+        - official_statistics
+        - open_consultation
+        - policy_paper
+        - promotional
+        - regulation
+        - research
+        - statistical_data_set
+        - statutory_guidance
+        - transparency
+    - id: "announcements"
+      document_types:
+        - announcement
+        - fatality_notice
+        - government_response
+        - news_story
+        - oral_statement
+        - press_release
+        - speech
+        - written_statement
+
+government_document_supertype:
+  name: "Government document type"
+  description: "Grouping for email subscriptions."
+  # we expect that everything should be mapped to a valid supertype.
+  default: other
+  items:
+    - id: consultations
+      document_types:
+        - consultation
+    - id: open-consultations
+      document_types:
+        - open_consultation
+    - id: closed-consultations
+      document_types:
+        - consultation_outcome
+        - closed_consultation
+    - id: policy-papers
+      document_types:
+        - policy_paper
+    - id: guidance
+      document_types:
+        - guidance
+        - statutory_guidance
+    - id: impact-assessments
+      document_types:
+        - impact_assessment
+    - id: independent-reports
+      document_types:
+        - independent_report
+    - id: correspondence
+      document_types:
+        - correspondence
+    - id: research-and-analysis
+      document_types:
+        - research
+    - id: statistics
+      document_types:
+        - official_statistics
+        - national_statistics
+        - statistical_data_set
+    - id: corporate-reports
+      document_types:
+        - corporate_report
+    - id: transparency-data
+      document_types:
+        - transparency
+    - id: foi-releases
+      document_types:
+        - foi_release
+    - id: forms
+      document_types:
+        - form
+    - id: maps
+      document_types:
+        - map
+    - id: international-treaties
+      document_types:
+        - international_treaty
+    - id: promotional-material
+      document_types:
+        - promotional
+    - id: notices
+      document_types:
+        - notice
+    - id: decisions
+      document_types:
+        - decision
+    - id: regulations
+      document_types:
+        - regulation
+    - id: press-releases
+      document_types:
+        - press_release
+    - id: news-stories
+      document_types:
+        - news_story
+        - announcement
+    - id: fatality-notices
+      document_types:
+        - fatality_notice
+    - id: speeches
+      document_types:
+        - speech
+    - id: statements
+      document_types:
+        - written_statement
+        - oral_statement
+    - id: government-responses
+      document_types:
+        - government_response
