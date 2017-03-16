@@ -35,7 +35,8 @@ describe GovukDocumentTypes do
     end
 
     it "contains only valid document types" do
-      allowed_document_types = YAML.load_file("../govuk-content-schemas/lib/govuk_content_schemas/allowed_document_types.yml")
+      schema_directory = ENV["GOVUK_CONTENT_SCHEMAS_PATH"] || "../govuk-content-schemas"
+      allowed_document_types = YAML.load_file("#{schema_directory}/lib/govuk_content_schemas/allowed_document_types.yml")
 
       document_types = GovukDocumentTypes::DATA.flat_map do |name, definition|
         definition["items"].flat_map do |supertype|
