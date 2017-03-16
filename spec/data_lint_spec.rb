@@ -38,7 +38,7 @@ describe GovukDocumentTypes do
       schema_directory = ENV["GOVUK_CONTENT_SCHEMAS_PATH"] || "../govuk-content-schemas"
       allowed_document_types = YAML.load_file("#{schema_directory}/lib/govuk_content_schemas/allowed_document_types.yml")
 
-      document_types = GovukDocumentTypes::DATA.flat_map do |name, definition|
+      document_types = GovukDocumentTypes::DATA.flat_map do |_name, definition|
         definition["items"].flat_map do |supertype|
           supertype["document_types"]
         end
