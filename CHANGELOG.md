@@ -1,3 +1,7 @@
+# 0.1.4
+
+* Add "email" and "government" supertypes to help with the whitehall email migration to EmailAlertApi
+
 # 0.1.3
 
 * Remove `notice` from list of guidance document types
