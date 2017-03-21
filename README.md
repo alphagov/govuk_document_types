@@ -1,41 +1,40 @@
-# GovukDocumentTypes
+# GOV.UK document types
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/govuk_document_types`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem contains the "document supertypes" for GOV.UK. Supertypes are groupings
+of document types.
 
-TODO: Delete this and the text above, and describe your gem
+https://docs.publishing.service.gov.uk/document-types.html
 
-## Installation
+This gem is only to be used in [publishing-api][publishing-api] and
+[rummager][rummager]. **Don't use it in your project**.
 
-Add this line to your application's Gemfile:
+## How to add a supertype
 
-```ruby
-gem 'govuk_document_types'
+1. Add it to [data/supertypes.yml](data/supertypes.yml) in this gem and release a new version
+2. [Add the supertype][rummager-pr] in Rummager so that it can be indexed and searched with. Bump the gem in Rummager.
+3. [Add the type to content-schemas][schemas-pr]
+4. [Add the type to the content-store][content-store-pr]
+5. Bump the gem version in [publishing-api][publishing-api]
+
+## How to update a supertype
+
+1. Update [data/supertypes.yml](data/supertypes.yml) in this gem and release a new version.
+2. Bump the gem version in [rummager][rummager]. Rummager's nightly re-indexing will pick up your changes.
+3. Bump the gem version in [publishing-api][publishing-api]. All documents have to be sent to the content-store again for your changes to be picked up.
+
+## Running the test suite
+
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install govuk_document_types
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/govuk_document_types.
-
+bundle exec rake
+```
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+[MIT License](LICENSE.txt)
 
+[rummager-pr]: https://github.com/alphagov/rummager/pull/756
+[schemas-pr]: https://github.com/alphagov/govuk-content-schemas/pull/551
+[content-store-pr]: https://github.com/alphagov/content-store/pull/268
+
+[publishing-api]: https://github.com/alphagov/publishing-api
+[rummager]: https://github.com/alphagov/rummager
