@@ -84,7 +84,6 @@ email_document_supertype:
         - transparency
     - id: "announcements"
       document_types:
-        - announcement
         - fatality_notice
         - government_response
         - news_story
@@ -169,7 +168,6 @@ government_document_supertype:
     - id: news-stories
       document_types:
         - news_story
-        - announcement
     - id: fatality-notices
       document_types:
         - fatality_notice
