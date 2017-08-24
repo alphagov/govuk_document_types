@@ -1,3 +1,8 @@
+# 0.1.6
+
+* Move all consultation document types under the same email_document_supertype
+to resolve a problem with subscriber lists we've never emailed from Whitehall
+
 # 0.1.5
 
 * Add email_document_supertype > announcements > world_news_story to fix some
