@@ -102,11 +102,7 @@ government_document_supertype:
     - id: consultations
       document_types:
         - consultation
-    - id: open-consultations
-      document_types:
         - open_consultation
-    - id: closed-consultations
-      document_types:
         - consultation_outcome
         - closed_consultation
     - id: policy-papers
