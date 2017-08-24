@@ -1,3 +1,8 @@
+# 0.1.5
+
+* Add email_document_supertype > announcements > world_news_story to fix some
+subscriber list matching problems between govuk-delivery and email-alert-api.
+
 # 0.1.4
 
 * Add "email" and "government" supertypes to help with the whitehall email migration to EmailAlertApi
