@@ -90,6 +90,7 @@ email_document_supertype:
         - oral_statement
         - press_release
         - speech
+        - world_news_story
         - written_statement
 
 government_document_supertype:
