@@ -1,3 +1,7 @@
+# 0.1.7
+
+* Include authored_article in statements government_super_type
+
 # 0.1.6
 
 * Move all consultation document types under the same email_document_supertype
