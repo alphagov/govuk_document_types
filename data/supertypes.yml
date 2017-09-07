@@ -175,6 +175,7 @@ government_document_supertype:
       document_types:
         - written_statement
         - oral_statement
+        - authored_article
     - id: government-responses
       document_types:
         - government_response
