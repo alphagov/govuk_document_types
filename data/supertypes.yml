@@ -84,6 +84,7 @@ email_document_supertype:
         - transparency
     - id: "announcements"
       document_types:
+        - authored_article
         - fatality_notice
         - government_response
         - news_story
