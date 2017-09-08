@@ -1,3 +1,7 @@
+# 0.1.8
+
+* Include authored_article in announcements email_super_type
+
 # 0.1.7
 
 * Include authored_article in statements government_super_type
