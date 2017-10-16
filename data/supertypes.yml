@@ -43,6 +43,7 @@ user_journey_document_supertype:
         - organisation
         - policy
         - policy_area
+        - redirect
         - search
         - service_manual_homepage
         - service_manual_topic
