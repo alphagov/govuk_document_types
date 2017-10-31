@@ -51,6 +51,22 @@ user_journey_document_supertype:
         - topic
         - topical_event
 
+search_user_need_document_supertype:
+  name: "Search user need"
+  description: "Used to group documents based on user need, core for mainstream users and government for specialist users in search results"
+  default: government
+  items:
+    - id: core
+      document_types:
+        - answer
+        - guide
+        - local_transaction
+        - place
+        - simple_smart_answer
+        - smart_answer
+        - transaction
+        - travel_advice
+
 email_document_supertype:
   name: "Email document type"
   description: "High level group for email subscriptions use to identify publications and announcement"
