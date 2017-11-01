@@ -1,3 +1,7 @@
+# Unreleased
+
+* Add search_user_need_document_supertype for boosting search results for certain document types
+
 # 0.1.8
 
 * Include authored_article in announcements email_super_type
