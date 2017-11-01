@@ -1,4 +1,4 @@
-# Unreleased
+# 0.1.9
 
 * Add search_user_need_document_supertype for boosting search results for certain document types
 
