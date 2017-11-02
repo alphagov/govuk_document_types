@@ -6,6 +6,7 @@ navigation_document_supertype:
     - id: guidance
       document_types:
         - answer
+        - calendar
         - contact
         - detailed_guide
         - document_collection

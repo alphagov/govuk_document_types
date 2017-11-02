@@ -1,6 +1,7 @@
 # Unreleased
 
 * Add calendar document type to search_user_need_document_supertype
+* Add calendar document type to navigation_document_supertype
 
 # 0.1.9
 
