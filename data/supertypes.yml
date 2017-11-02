@@ -59,6 +59,7 @@ search_user_need_document_supertype:
     - id: core
       document_types:
         - answer
+        - calendar
         - guide
         - local_transaction
         - place
