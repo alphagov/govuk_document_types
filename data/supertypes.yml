@@ -112,6 +112,7 @@ user_need_document_supertype:
     - id: decisions
       document_types:
         - asylum_support_decision
+        - decision
         - dfid_research_output
         - employment_appeal_tribunal_decision
         - employment_tribunal_decision
