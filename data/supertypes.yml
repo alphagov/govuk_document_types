@@ -137,6 +137,7 @@ user_need_document_supertype:
         - national_statistics
         - need
         - official_statistics
+        - statistical_data_set
         - statistics
         - transparency
 
