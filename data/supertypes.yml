@@ -6,7 +6,6 @@ navigation_document_supertype:
     - id: guidance
       document_types:
         - answer
-        - calendar
         - contact
         - detailed_guide
         - document_collection
@@ -172,7 +171,6 @@ user_need_document_supertype:
 
     - id: finder
       document_types:
-        - business_support_finder
         - document_collection
         - finder
         - travel_advice_index
@@ -194,6 +192,9 @@ user_need_document_supertype:
         - publication_scheme
         - services_and_information
         - social_media_use
+        - terms_of_reference
+        - welsh_language_scheme
+        - petitions_and_campaigns
 
     - id: service-manual
       document_types:
@@ -211,7 +212,6 @@ user_journey_document_supertype:
   items:
     - id: finding
       document_types:
-        - business_support_finder
         - document_collection
         - finder
         - homepage
@@ -236,7 +236,6 @@ search_user_need_document_supertype:
     - id: core
       document_types:
         - answer
-        - calendar
         - guide
         - local_transaction
         - place
