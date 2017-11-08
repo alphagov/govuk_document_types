@@ -67,18 +67,18 @@ user_need_document_supertype:
 
     - id: guidance
       document_types:
-        - travel_advice
-        - guide
-        - guidance
-        - calendar
         - answer
-        - html_publication
+        - calendar
         - detailed_guide
-        - statutory_guidance
-        - manual
-        - manual_section
+        - guidance
+        - guide
         - hmrc_manual
         - hmrc_manual_section
+        - html_publication
+        - manual
+        - manual_section
+        - statutory_guidance
+        - travel_advice
 
     - id: contacts
       document_types:
