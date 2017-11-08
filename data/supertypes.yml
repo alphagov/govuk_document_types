@@ -69,6 +69,7 @@ user_need_document_supertype:
       document_types:
         - travel_advice
         - guide
+        - guidance
         - calendar
         - answer
         - html_publication
