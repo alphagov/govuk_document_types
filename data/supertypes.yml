@@ -243,6 +243,7 @@ search_user_need_document_supertype:
         - smart_answer
         - transaction
         - travel_advice
+        - travel_advice_index
 
 email_document_supertype:
   name: "Email document type"
