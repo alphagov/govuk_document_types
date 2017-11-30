@@ -1,3 +1,11 @@
+# 0.1.11
+
+* Add travel_advice_index document type to search_user_need_document_supertype
+* Add user_need_document_supertype
+* Remove calendar document type from navigation_document_supertype
+* Remove calendar document type from search_user_need_document_supertype
+* Remove business_support_finder document type from user_journey_document_supertype
+
 # 0.1.10
 
 * Add calendar document type to search_user_need_document_supertype
