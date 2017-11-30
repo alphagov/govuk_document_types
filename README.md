@@ -8,6 +8,10 @@ https://docs.publishing.service.gov.uk/document-types.html
 This gem is only to be used in [publishing-api][publishing-api] and
 [rummager][rummager]. **Don't use it in your project**.
 
+## Long term vision
+
+This gem is used to share the canonical list of supertypes between rummager and publishing-api. We're currently migrating to a new system of indexing where rummager gets all data from the publishing-api (via a message queue). Once that work is completed this repo should be retired and the canonical list should be moved to either [govuk-content-schemas][] for use in the publishing-api, or be moved into publishing-api directly.
+
 ## How to add a supertype
 
 1. Add it to [data/supertypes.yml](data/supertypes.yml) in this gem and release a new version
@@ -33,6 +37,7 @@ bundle exec rake
 [MIT License](LICENSE.txt)
 
 [rummager-pr]: https://github.com/alphagov/rummager/pull/756
+[govuk-content-schemas]: https://github.com/alphagov/govuk-content-schemas
 [schemas-pr]: https://github.com/alphagov/govuk-content-schemas/pull/551
 [content-store-pr]: https://github.com/alphagov/content-store/pull/268
 
