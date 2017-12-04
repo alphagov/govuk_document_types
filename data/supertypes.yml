@@ -25,45 +25,48 @@ navigation_document_supertype:
         - transaction
         - travel_advice
 
-user_need_document_supertype:
-  name: "User need"
+content_purpose_document_supertype:
+  name: "Content purpose"
   description: "As defined by the Frontend & Navigation team in Q3-2017 - https://gov-uk.atlassian.net/wiki/spaces/GFED/pages/187564388/Grouping+document+types+by+need"
   default: other
   items:
     - id: updates-and-alerts
+      description: To provide time-based information on a new thing (alert) or something that's already happened (update)
       document_types:
         - drug_safety_update
         - fatality_notice
         - medical_safety_alert
         - national_statistics_announcement
         - official_statistics_announcement
-        - press_release
         - staff_update
         - statistics_announcement
         - vehicle_recalls_and_faults_alert
 
-    - id: news-promotions
+    - id: news
+      description: To communicate what government is doing (non-urgent)
       document_types:
-        - authored_article
-        - campaign
         - case_study
+        - correspondence # Also used for other things
         - news_article
         - news_story
+        - press_release
         - world_location_news_article
         - world_news_story
 
-    - id: marketing
+    - id: resources
       document_types:
+        - map
         - promotional
-        - coming_soon
 
-    - id: speeches
+    - id: speeches-and-statements
       document_types:
+        - authored_article
         - oral_statement
         - speech
         - written_statement
 
     - id: guidance
+      description: To provide information that prepares the user for doing a thing (without the need to share any personal information).
       document_types:
         - answer
         - calendar
@@ -75,6 +78,8 @@ user_need_document_supertype:
         - html_publication
         - manual
         - manual_section
+        - policy_paper
+        - regulation
         - statutory_guidance
         - travel_advice
 
@@ -83,10 +88,12 @@ user_need_document_supertype:
         - contact
 
     - id: transactions
+      description: To provide specific information and tools that enables the user to do a thing, based on information they provide during the transaction.
       document_types:
         - calculator
         - completed_transaction
         - form
+        - licence
         - local_transaction
         - place
         - simple_smart_answer
@@ -94,20 +101,19 @@ user_need_document_supertype:
         - transaction
 
     - id: reports
+      description: To share in detail the outcome of investigations, research and changes in regulation (government and independent bodies).
       document_types:
         - aaib_report
         - consultation_outcome
-        - financial_release
         - impact_assessment
         - independent_report
         - maib_report
-        - procurement
         - raib_report
-        - regulation
         - research
         - service_standard_report
 
     - id: decisions
+      description: To share decisions and/or reports made by government on a specific thing.
       document_types:
         - asylum_support_decision
         - decision
@@ -120,26 +126,26 @@ user_need_document_supertype:
         - utaac_decision
 
     - id: engagement-activities
+      description: To enable bodies and people to comment on government policy and provide evidence.
       document_types:
         - closed_consultation
         - cma_case
         - consultation
-        - licence
         - notice
         - open_consultation
 
     - id: data
+      description: To provide data that enables people to hold government to account (both raw data and data with analysis).
       document_types:
-        - correspondence
         - foi_release
         - national_statistics
-        - need
         - official_statistics
         - statistical_data_set
         - statistics
         - transparency
 
     - id: organising-entities
+      description: Things that exist in the real world
       document_types:
         - working_group
         - organisation
@@ -147,32 +153,32 @@ user_need_document_supertype:
         - worldwide_organisation
         - world_location
         - topical_event
-        - policy_area
         - field_of_operation
         - ministerial_role
-        - topical_event_about_page
 
-    - id: support
+    - id: navigation
+      description: Pages that enable users to get to content pages
+      document_types:
+        # "Tags"
+        - document_collection
+        - mainstream_browse_page
+        - policy
+        - policy_area
+        - taxon
+        - topic
+
+        # Hardcoded pages to let users navigate
+        - finder
+        - homepage
+        - search
+        - travel_advice_index
+
+    - id: grants-and-funding
       document_types:
         - countryside_stewardship_grant
         - esi_fund
         - international_development_fund
-
-    - id: navigation
-      document_types:
-        - finder_email_signup
-        - homepage
-        - mainstream_browse_page
-        - search
-        - take_part
-        - taxon
-        - topic
-
-    - id: finder
-      document_types:
-        - document_collection
-        - finder
-        - travel_advice_index
+        - business_finance_support_scheme
 
     - id: corporate-info
       document_types:
@@ -188,12 +194,14 @@ user_need_document_supertype:
         - our_energy_use
         - our_governance
         - personal_information_charter
+        - petitions_and_campaigns
+        - procurement
         - publication_scheme
+        - recruitment
         - services_and_information
         - social_media_use
         - terms_of_reference
         - welsh_language_scheme
-        - petitions_and_campaigns
 
     - id: service-manual
       document_types:
