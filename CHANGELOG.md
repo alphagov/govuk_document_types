@@ -1,3 +1,8 @@
+# 0.2.0
+
+* Replace `user_need_document_supertype` by `content_purpose_document_supertype`
+* Updates to `content_purpose_document_supertype`
+
 # 0.1.11
 
 * Add travel_advice_index document type to search_user_need_document_supertype
