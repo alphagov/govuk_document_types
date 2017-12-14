@@ -27,7 +27,7 @@ navigation_document_supertype:
 
 content_purpose_document_supertype:
   name: "Content purpose"
-  description: "As defined by the Frontend & Navigation team in Q3-2017 - https://gov-uk.atlassian.net/wiki/spaces/GFED/pages/187564388/Grouping+document+types+by+need"
+  description: "As defined by the Frontend & Navigation team in Q3-2017. The team grouped document types that serve a similar purpose for users into top-level content groups. In time, this information could be used to serve relevant links into a content page sidebar and pull feeds of specific content groups into navigation pages."
   default: other
   items:
     - id: updates-and-alerts
