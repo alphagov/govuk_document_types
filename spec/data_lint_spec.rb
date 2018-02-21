@@ -18,8 +18,7 @@ describe GovukDocumentTypes do
 
     it "defines a default supertype for all document types" do
       GovukDocumentTypes::DATA.each do |name, definition|
-        expect(definition["default"]).not_to be_nil,
-          "No default value provided for '#{name}'"
+        expect(definition["default"]).not_to be_nil, "No default value provided for '#{name}'"
       end
     end
 
@@ -45,6 +44,47 @@ describe GovukDocumentTypes do
       end
 
       expect(document_types - allowed_document_types).to eql([])
+    end
+  end
+
+  describe "supergroups and subgroup document types" do
+    supergroups_data = YAML.load_file(File.dirname(__FILE__) + "/../data/supergroups.yml")
+    supertypes_data = GovukDocumentTypes::DATA
+
+    it "tests that a supergroup contains the same document types as it's collective subgroups" do
+      supergroups_with_subgroup_data(supergroups_data).each do |supergroup|
+        supergroup_document_types = document_types_in_supergroup(supertypes_data, supergroup["id"])
+
+        subgroups_document_types = document_types_for_subgroups_in_supergroup(supergroup, supertypes_data)
+
+        expect(supergroup_document_types).to match_array(subgroups_document_types)
+      end
+    end
+  end
+
+  def supergroups_with_subgroup_data(data)
+    data["content_purpose_supergroup"]["items"]
+  end
+
+  def document_types_in_supergroup(supertype_data_from_file, supergroup_id)
+    supergroup_info = supertype_data_from_file["content_purpose_supergroup"]["items"].find do |supergroup|
+      supergroup["id"] == supergroup_id
+    end
+    supergroup_info["document_types"]
+  end
+
+  def document_types_for_subgroups_in_supergroup(supergroup, supertypes_data)
+    document_types = []
+    supergroup["subgroups"].flat_map do |subgroup|
+      subgroup = subgroup_data_from_supertypes(supertypes_data, subgroup)
+      document_types.push(subgroup["document_types"])
+    end
+    document_types.flatten
+  end
+
+  def subgroup_data_from_supertypes(supertypes_data, subgroup_id)
+    supertypes_data["content_purpose_subgroup"]["items"].find do |subgroup|
+      subgroup["id"] == subgroup_id
     end
   end
 end
