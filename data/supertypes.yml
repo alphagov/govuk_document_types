@@ -27,7 +27,7 @@ navigation_document_supertype:
 
 content_purpose_document_supertype:
   name: "Content purpose"
-  description: "As defined by the Frontend & Navigation team in Q3-2017. The team grouped document types that serve a similar purpose for users into top-level content groups. In time, this information could be used to serve relevant links into a content page sidebar and pull feeds of specific content groups into navigation pages."
+  description: "DEPRECATED - Please use `content_purpose_subgroup`. The team grouped document types that serve a similar purpose for users into top-level content groups. In time, this information could be used to serve relevant links into a content page sidebar and pull feeds of specific content groups into navigation pages."
   default: other
   items:
     - id: updates-and-alerts
@@ -40,7 +40,6 @@ content_purpose_document_supertype:
         - official_statistics_announcement
         - staff_update
         - statistics_announcement
-        - vehicle_recalls_and_faults_alert
 
     - id: news
       description: To communicate what government is doing (non-urgent)
@@ -381,3 +380,192 @@ government_document_supertype:
     - id: government-responses
       document_types:
         - government_response
+
+content_purpose_subgroup:
+  name: "Content Purpose Subgroup"
+  description: "These are the new sub groups that came out of the research from the JTBD framework in Q4 by the navigation team and are used in the topic pages. These are the sub groups connected to the content_purpose_document_supergroup"
+  default: other
+  items:
+    - id: updates_and_alerts
+      document_types:
+        - fatality_notice
+        - medical_safety_alert
+        - drug_safety_update
+        - notice
+    - id: news
+      document_types:
+        - news_article
+        - news_story
+        - press_release
+        - world_location_news_article
+        - world_news_story
+    - id: speeches_and_statements
+      document_types:
+        - speech
+        - oral_statement
+        - written_statement
+        - authored_article
+        - government_response
+        - correspondence
+    - id: guidance
+      document_types:
+        - guide
+        - detailed_guide
+        - manual
+        - manual_section
+        - guidance
+        - answer
+        - contact
+        - calendar
+        - travel_advice
+    - id: regulation
+      document_types:
+        - statutory_guidance
+        - regulation
+    - id: business_support
+      document_types:
+        - international_development_fund
+        - countryside_stewardship_grant
+        - esi_fund
+        - business_finance_support_scheme
+    - id: transactions
+      document_types:
+        - transaction
+        - completed_transaction
+        - local_transaction
+        - form
+        - licence
+        - calculator
+        - smart_answer
+        - simple_smart_answer
+        - place
+        - step_by_step_nav
+    - id: policy
+      document_types:
+        - policy_paper
+        - independent_report
+        - impact_assessment
+        - case_study
+    - id: consultations
+      document_types:
+        - open_consultation
+        - closed_consultation
+        - consultation_outcome
+    - id: decisions
+      document_types:
+        - decision
+        - employment_tribunal_decision
+        - tax_tribunal_decision
+        - utaac_decision
+        - asylum_support_decision
+        - employment_appeal_tribunal_decision
+        - international_treaty
+        - service_standard_report
+        - cma_case
+    - id: incidents
+      document_types:
+        - aaib_report
+        - raib_report
+        - maib_report
+    - id: research_and_data
+      document_types:
+        - official_statistics
+        - statistics
+        - national_statistics
+        - statistics_announcement
+        - national_statistics_announcement
+        - official_statistics_announcement
+        - statistical_data_set
+        - research
+        - dfid_research_output
+        - transparency
+        - map
+        - foi_release
+
+content_purpose_supergroup:
+  name: "Content Purpose Supergroup"
+  description: "These are the new supergroups that came out of the research from the JTBD framework in Q4 by the navigation team and are used in the topic pages."
+  default: other
+  items:
+    - id: news_and_communications
+      document_types:
+        - fatality_notice
+        - medical_safety_alert
+        - drug_safety_update
+        - notice
+        - news_article
+        - news_story
+        - press_release
+        - world_location_news_article
+        - world_news_story
+        - speech
+        - oral_statement
+        - written_statement
+        - authored_article
+        - government_response
+        - correspondence
+    - id: guidance_and_regulation
+      document_types:
+        - guide
+        - detailed_guide
+        - manual
+        - manual_section
+        - guidance
+        - answer
+        - contact
+        - calendar
+        - travel_advice
+        - statutory_guidance
+        - regulation
+        - international_development_fund
+        - countryside_stewardship_grant
+        - esi_fund
+        - business_finance_support_scheme
+    - id: services
+      document_types:
+        - transaction
+        - completed_transaction
+        - local_transaction
+        - form
+        - licence
+        - calculator
+        - smart_answer
+        - simple_smart_answer
+        - place
+        - step_by_step_nav
+    - id: policy_and_engagement
+      document_types:
+        - policy_paper
+        - independent_report
+        - impact_assessment
+        - case_study
+        - open_consultation
+        - closed_consultation
+        - consultation_outcome
+    - id: transparency
+      document_types:
+        - decision
+        - employment_tribunal_decision
+        - tax_tribunal_decision
+        - utaac_decision
+        - asylum_support_decision
+        - employment_appeal_tribunal_decision
+        - international_treaty
+        - service_standard_report
+        - cma_case
+        - aaib_report
+        - raib_report
+        - maib_report
+        - official_statistics
+        - statistics
+        - national_statistics
+        - statistics_announcement
+        - national_statistics_announcement
+        - official_statistics_announcement
+        - statistical_data_set
+        - research
+        - dfid_research_output
+        - transparency
+        - map
+        - foi_release
+
