@@ -1,3 +1,7 @@
+# 0.3.0
+
+* Add `content_purpose_supergroup` and `content_purpose_subgroup`
+
 # 0.2.0
 
 * Replace `user_need_document_supertype` by `content_purpose_document_supertype`
