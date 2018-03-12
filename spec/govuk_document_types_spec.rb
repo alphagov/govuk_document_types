@@ -18,4 +18,13 @@ describe GovukDocumentTypes do
       expect(supertypes).to include("navigation_document_supertype" => "other")
     end
   end
+
+  describe '.supergroup' do
+    it 'returns supergroups with matching ids' do
+      ids = %w(news_and_communications services)
+      supergroups = GovukDocumentTypes.supergroups(ids: ids)
+
+      expect(supergroups.map { |g| g["id"] }).to eq(ids)
+    end
+  end
 end
