@@ -1,3 +1,8 @@
+# 0.4.0
+
+* Adds `GovukDocumentTypes.supergroups(:ids)` as a way to retrieve
+  supergroups by ID.
+
 # 0.3.0
 
 * Add `content_purpose_supergroup` and `content_purpose_subgroup`
