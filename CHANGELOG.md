@@ -1,3 +1,7 @@
+# Unreleased
+
+* Removes `content_purpose_document_supertype`
+
 # 0.4.0
 
 * Adds `GovukDocumentTypes.supergroups(:ids)` as a way to retrieve
