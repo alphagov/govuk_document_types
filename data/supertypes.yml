@@ -1,30 +1,3 @@
-navigation_document_supertype:
-  name: "Navigation document type"
-  description: "Used to filter pages on the new taxonomy-based navigation pages"
-  default: other
-  items:
-    - id: guidance
-      document_types:
-        - answer
-        - contact
-        - detailed_guide
-        - document_collection
-        - form
-        - guidance
-        - guide
-        - licence
-        - local_transaction
-        - manual
-        - map
-        - place
-        - promotional
-        - regulation
-        - simple_smart_answer
-        - smart_answer
-        - statutory_guidance
-        - transaction
-        - travel_advice
-
 user_journey_document_supertype:
   name: "User journey"
   description: "Used to distinguish pages used mainly for navigation (finding) from content pages (thing)"
