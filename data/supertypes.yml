@@ -1,3 +1,215 @@
+navigation_document_supertype:
+  name: "Navigation document type"
+  description: "Used to filter pages on the new taxonomy-based navigation pages"
+  default: other
+  items:
+    - id: guidance
+      document_types:
+        - answer
+        - contact
+        - detailed_guide
+        - document_collection
+        - form
+        - guidance
+        - guide
+        - licence
+        - local_transaction
+        - manual
+        - map
+        - place
+        - promotional
+        - regulation
+        - simple_smart_answer
+        - smart_answer
+        - statutory_guidance
+        - transaction
+        - travel_advice
+
+content_purpose_document_supertype:
+  name: "Content purpose"
+  description: "DEPRECATED - Please use `content_purpose_subgroup`. The team grouped document types that serve a similar purpose for users into top-level content groups. In time, this information could be used to serve relevant links into a content page sidebar and pull feeds of specific content groups into navigation pages."
+  default: other
+  items:
+    - id: updates-and-alerts
+      description: To provide time-based information on a new thing (alert) or something that's already happened (update)
+      document_types:
+        - drug_safety_update
+        - fatality_notice
+        - medical_safety_alert
+        - national_statistics_announcement
+        - official_statistics_announcement
+        - staff_update
+        - statistics_announcement
+
+    - id: news
+      description: To communicate what government is doing (non-urgent)
+      document_types:
+        - case_study
+        - correspondence # Also used for other things
+        - news_article
+        - news_story
+        - press_release
+        - world_location_news_article
+        - world_news_story
+
+    - id: resources
+      document_types:
+        - map
+        - promotional
+
+    - id: speeches-and-statements
+      document_types:
+        - authored_article
+        - oral_statement
+        - speech
+        - written_statement
+
+    - id: guidance
+      description: To provide information that prepares the user for doing a thing (without the need to share any personal information).
+      document_types:
+        - answer
+        - calendar
+        - detailed_guide
+        - guidance
+        - guide
+        - hmrc_manual
+        - hmrc_manual_section
+        - html_publication
+        - manual
+        - manual_section
+        - policy_paper
+        - regulation
+        - statutory_guidance
+        - travel_advice
+
+    - id: contacts
+      document_types:
+        - contact
+
+    - id: transactions
+      description: To provide specific information and tools that enables the user to do a thing, based on information they provide during the transaction.
+      document_types:
+        - calculator
+        - completed_transaction
+        - form
+        - licence
+        - local_transaction
+        - place
+        - simple_smart_answer
+        - smart_answer
+        - transaction
+
+    - id: reports
+      description: To share in detail the outcome of investigations, research and changes in regulation (government and independent bodies).
+      document_types:
+        - aaib_report
+        - consultation_outcome
+        - impact_assessment
+        - independent_report
+        - maib_report
+        - raib_report
+        - research
+        - service_standard_report
+
+    - id: decisions
+      description: To share decisions and/or reports made by government on a specific thing.
+      document_types:
+        - asylum_support_decision
+        - decision
+        - dfid_research_output
+        - employment_appeal_tribunal_decision
+        - employment_tribunal_decision
+        - government_response
+        - international_treaty
+        - tax_tribunal_decision
+        - utaac_decision
+
+    - id: engagement-activities
+      description: To enable bodies and people to comment on government policy and provide evidence.
+      document_types:
+        - closed_consultation
+        - cma_case
+        - consultation
+        - notice
+        - open_consultation
+
+    - id: data
+      description: To provide data that enables people to hold government to account (both raw data and data with analysis).
+      document_types:
+        - foi_release
+        - national_statistics
+        - official_statistics
+        - statistical_data_set
+        - statistics
+        - transparency
+
+    - id: organising-entities
+      description: Things that exist in the real world
+      document_types:
+        - working_group
+        - organisation
+        - person
+        - worldwide_organisation
+        - world_location
+        - topical_event
+        - field_of_operation
+        - ministerial_role
+
+    - id: navigation
+      description: Pages that enable users to get to content pages
+      document_types:
+        # "Tags"
+        - document_collection
+        - mainstream_browse_page
+        - policy
+        - policy_area
+        - taxon
+        - topic
+
+        # Hardcoded pages to let users navigate
+        - finder
+        - homepage
+        - search
+        - travel_advice_index
+
+    - id: grants-and-funding
+      document_types:
+        - countryside_stewardship_grant
+        - esi_fund
+        - international_development_fund
+        - business_finance_support_scheme
+
+    - id: corporate-info
+      document_types:
+        - about
+        - about_our_services
+        - access_and_opening
+        - complaints_procedure
+        - corporate_report
+        - equality_and_diversity
+        - help_page
+        - media_enquiries
+        - membership
+        - our_energy_use
+        - our_governance
+        - personal_information_charter
+        - petitions_and_campaigns
+        - procurement
+        - publication_scheme
+        - recruitment
+        - services_and_information
+        - social_media_use
+        - terms_of_reference
+        - welsh_language_scheme
+
+    - id: service-manual
+      document_types:
+        - service_manual_homepage
+        - service_manual_service_toolkit
+        - service_manual_service_standard
+        - service_manual_guide
+        - service_manual_topic
+
 user_journey_document_supertype:
   name: "User journey"
   description: "Used to distinguish pages used mainly for navigation (finding) from content pages (thing)"
@@ -21,6 +233,23 @@ user_journey_document_supertype:
         - taxon
         - topic
         - topical_event
+
+search_user_need_document_supertype:
+  name: "Search user need"
+  description: "Used to group documents based on user need, core for mainstream users and government for specialist users in search results"
+  default: government
+  items:
+    - id: core
+      document_types:
+        - answer
+        - guide
+        - local_transaction
+        - place
+        - simple_smart_answer
+        - smart_answer
+        - transaction
+        - travel_advice
+        - travel_advice_index
 
 email_document_supertype:
   name: "Email document type"
@@ -339,3 +568,4 @@ content_purpose_supergroup:
         - transparency
         - map
         - foi_release
+
