@@ -1,7 +1,6 @@
 # Unreleased
 
 * Removes `content_purpose_document_supertype`
-* Removes `search_user_need_document_supertype`
 
 # 0.4.0
 
