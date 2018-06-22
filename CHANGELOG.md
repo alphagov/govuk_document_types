@@ -1,3 +1,8 @@
+# 0.5.0
+
+* Adds `statutory_instrument` document type to `content_purpose_subgroup`
+  policy and `content_purpose_supergroup` policy_and_engagement
+
 # 0.4.0
 
 * Adds `GovukDocumentTypes.supergroups(:ids)` as a way to retrieve
