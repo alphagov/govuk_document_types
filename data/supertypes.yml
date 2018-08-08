@@ -470,6 +470,7 @@ content_purpose_subgroup:
         - maib_report
     - id: research_and_data
       document_types:
+        - corporate_report
         - official_statistics
         - statistics
         - national_statistics
@@ -546,6 +547,7 @@ content_purpose_supergroup:
         - consultation_outcome
     - id: transparency
       document_types:
+        - corporate_report
         - decision
         - employment_tribunal_decision
         - tax_tribunal_decision
