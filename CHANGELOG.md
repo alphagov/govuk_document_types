@@ -1,3 +1,8 @@
+# 0.6.0
+
+* Adds `corporate_report` document type to `content_purpose_subgroup`
+  research_and_data and `content_purpose_supergroup` transparency
+
 # 0.5.0
 
 * Adds `statutory_instrument` document type to `content_purpose_subgroup`
