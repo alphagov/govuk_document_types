@@ -8,6 +8,7 @@ content_purpose_supergroup:
         - updates_and_alerts
         - news
         - speeches_and_statements
+        - decisions
     - id: guidance_and_regulation
       subgroups:
         - guidance
@@ -20,11 +21,15 @@ content_purpose_supergroup:
       subgroups:
         - policy
         - consultations
+    - id: research_and_statistics
+      subgroups:
+        - research
+        - statistics
     - id: transparency
       subgroups:
-        - decisions
         - incidents
-        - research_and_data
+        - freedom_of_information_releases
+        - transparency_data
 
 documentation : |
   These are the grouping that the navigation team came up with

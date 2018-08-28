@@ -388,10 +388,8 @@ content_purpose_subgroup:
   items:
     - id: updates_and_alerts
       document_types:
-        - fatality_notice
         - medical_safety_alert
         - drug_safety_update
-        - notice
     - id: news
       document_types:
         - news_article
@@ -399,90 +397,99 @@ content_purpose_subgroup:
         - press_release
         - world_location_news_article
         - world_news_story
+        - fatality_notice
+    - id: decisions
+      document_types:
+        - tax_tribunal_decision
+        - utaac_decision
+        - asylum_support_decision
+        - employment_appeal_tribunal_decision
+        - employment_tribunal_decision
+        - service_standard_report
+        - cma_case
+        - decision
     - id: speeches_and_statements
       document_types:
-        - speech
         - oral_statement
         - written_statement
         - authored_article
-        - government_response
         - correspondence
+        - speech
+        - government_response
+    - id: transactions
+      document_types:
+        - completed_transaction
+        - local_transaction
+        - form
+        - calculator
+        - smart_answer
+        - simple_smart_answer
+        - place
+        - licence
+        - step_by_step_nav
+        - transaction
+        - answer
+        - guide
+    - id: regulation
+      document_types:
+        - regulation
+        - statutory_instrument
     - id: guidance
       document_types:
-        - guide
         - detailed_guide
         - manual
         - manual_section
         - guidance
-        - answer
+        - map
         - contact
         - calendar
-        - travel_advice
-    - id: regulation
-      document_types:
         - statutory_guidance
-        - regulation
+        - notice
+        - international_treaty
+        - travel_advice
+        - promotional
     - id: business_support
       document_types:
         - international_development_fund
         - countryside_stewardship_grant
         - esi_fund
         - business_finance_support_scheme
-    - id: transactions
-      document_types:
-        - transaction
-        - completed_transaction
-        - local_transaction
-        - form
-        - licence
-        - calculator
-        - smart_answer
-        - simple_smart_answer
-        - place
-        - step_by_step_nav
     - id: policy
       document_types:
-        - statutory_instrument
-        - policy_paper
-        - independent_report
         - impact_assessment
         - case_study
+        - policy_paper
     - id: consultations
       document_types:
         - open_consultation
         - closed_consultation
         - consultation_outcome
-    - id: decisions
+    - id: research
       document_types:
-        - decision
-        - employment_tribunal_decision
-        - tax_tribunal_decision
-        - utaac_decision
-        - asylum_support_decision
-        - employment_appeal_tribunal_decision
-        - international_treaty
-        - service_standard_report
-        - cma_case
-    - id: incidents
+        - dfid_research_output
+        - independent_report
+        - research
+    - id: statistics
       document_types:
-        - aaib_report
-        - raib_report
-        - maib_report
-    - id: research_and_data
-      document_types:
-        - corporate_report
-        - official_statistics
         - statistics
         - national_statistics
         - statistics_announcement
         - national_statistics_announcement
         - official_statistics_announcement
         - statistical_data_set
-        - research
-        - dfid_research_output
+        - official_statistics
+    - id: transparency_data
+      document_types:
         - transparency
-        - map
+        - corporate_report
+    - id: freedom_of_information_releases
+      document_types:
         - foi_release
+    - id: incidents
+      document_types:
+        - aaib_report
+        - raib_report
+        - maib_report
 
 content_purpose_supergroup:
   name: "Content Purpose Supergroup"
@@ -491,85 +498,91 @@ content_purpose_supergroup:
   items:
     - id: news_and_communications
       document_types:
-        - fatality_notice
         - medical_safety_alert
         - drug_safety_update
-        - notice
         - news_article
         - news_story
         - press_release
         - world_location_news_article
         - world_news_story
-        - speech
-        - oral_statement
-        - written_statement
-        - authored_article
-        - government_response
-        - correspondence
-    - id: guidance_and_regulation
-      document_types:
-        - guide
-        - detailed_guide
-        - manual
-        - manual_section
-        - guidance
-        - answer
-        - contact
-        - calendar
-        - travel_advice
-        - statutory_guidance
-        - regulation
-        - international_development_fund
-        - countryside_stewardship_grant
-        - esi_fund
-        - business_finance_support_scheme
-    - id: services
-      document_types:
-        - transaction
-        - completed_transaction
-        - local_transaction
-        - form
-        - licence
-        - calculator
-        - smart_answer
-        - simple_smart_answer
-        - place
-        - step_by_step_nav
-    - id: policy_and_engagement
-      document_types:
-        - statutory_instrument
-        - policy_paper
-        - independent_report
-        - impact_assessment
-        - case_study
-        - open_consultation
-        - closed_consultation
-        - consultation_outcome
-    - id: transparency
-      document_types:
-        - corporate_report
-        - decision
-        - employment_tribunal_decision
+        - fatality_notice
         - tax_tribunal_decision
         - utaac_decision
         - asylum_support_decision
         - employment_appeal_tribunal_decision
-        - international_treaty
+        - employment_tribunal_decision
         - service_standard_report
         - cma_case
-        - aaib_report
-        - raib_report
-        - maib_report
-        - official_statistics
+        - decision
+        - oral_statement
+        - written_statement
+        - authored_article
+        - correspondence
+        - speech
+        - government_response
+    - id: services
+      document_types:
+        - completed_transaction
+        - local_transaction
+        - form
+        - calculator
+        - smart_answer
+        - simple_smart_answer
+        - place
+        - licence
+        - step_by_step_nav
+        - transaction
+        - answer
+        - guide
+    - id: guidance_and_regulation
+      document_types:
+        - regulation
+        - detailed_guide
+        - manual
+        - manual_section
+        - guidance
+        - map
+        - contact
+        - calendar
+        - statutory_guidance
+        - notice
+        - international_treaty
+        - travel_advice
+        - promotional
+        - international_development_fund
+        - countryside_stewardship_grant
+        - esi_fund
+        - business_finance_support_scheme
+        - statutory_instrument
+    - id: policy_and_engagement
+      document_types:
+        - impact_assessment
+        - case_study
+        - policy_paper
+        - open_consultation
+        - closed_consultation
+        - consultation_outcome
+    - id: research_and_statistics
+      document_types:
+        - dfid_research_output
+        - independent_report
+        - research
         - statistics
         - national_statistics
         - statistics_announcement
         - national_statistics_announcement
         - official_statistics_announcement
         - statistical_data_set
-        - research
-        - dfid_research_output
+        - official_statistics
+    - id: transparency
+      document_types:
         - transparency
-        - map
+        - corporate_report
         - foi_release
+        - aaib_report
+        - raib_report
+        - maib_report
+
+
+
 
