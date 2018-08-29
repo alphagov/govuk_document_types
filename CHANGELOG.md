@@ -1,3 +1,10 @@
+# 0.7.0
+
+* Move `decisions` `content_purpose_subgroup` from `transparency` to `news_and_communications`
+* Add new `research_and_statistics` `content_purpose_supergroup`
+* Splits `transparency` `content_purpose_supergroup` into `incidents`, `freedom_of_information_releases`, and `transparency_data`
+* Move some document types around between `content_purpose_subgroups`
+
 # 0.6.0
 
 * Adds `corporate_report` document type to `content_purpose_subgroup`
