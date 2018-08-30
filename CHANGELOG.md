@@ -1,3 +1,7 @@
+# 0.7.1
+
+* Add `hrmc_manual` format to `guidance` `content_purpose_subgroup`
+
 # 0.7.0
 
 * Move `decisions` `content_purpose_subgroup` from `transparency` to `news_and_communications`
