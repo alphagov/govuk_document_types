@@ -448,6 +448,7 @@ content_purpose_subgroup:
         - international_treaty
         - travel_advice
         - promotional
+        - hmrc_manual
     - id: business_support
       document_types:
         - international_development_fund
@@ -554,6 +555,7 @@ content_purpose_supergroup:
         - esi_fund
         - business_finance_support_scheme
         - statutory_instrument
+        - hmrc_manual
     - id: policy_and_engagement
       document_types:
         - impact_assessment
