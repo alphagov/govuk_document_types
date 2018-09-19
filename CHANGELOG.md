@@ -1,3 +1,7 @@
+# Unreleased
+
+* Configure display names for content_purpose supertypes
+
 # 0.7.1
 
 * Add `hrmc_manual` format to `guidance` `content_purpose_subgroup`

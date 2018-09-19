@@ -24,4 +24,17 @@ module GovukDocumentTypes
     groups = SUPERGROUPS["content_purpose_supergroup"]["items"]
     groups.select { |g| ids.include?(g["id"]) }
   end
+
+  def self.display_name(supertype:, group:)
+    supertype_group(supertype: supertype, group: group)["display_name"]
+  end
+
+  def self.document_types(supertype:, group:)
+    supertype_group(supertype: supertype, group: group)["document_types"]
+  end
+
+  private_class_method def self.supertype_group(supertype:, group:)
+    supertype_groups = DATA[supertype]["items"]
+    supertype_groups.detect { |item| item["id"] == group }
+  end
 end

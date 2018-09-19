@@ -387,10 +387,12 @@ content_purpose_subgroup:
   default: other
   items:
     - id: updates_and_alerts
+      display_name: Safety alerts
       document_types:
         - medical_safety_alert
         - drug_safety_update
     - id: news
+      display_name: Announcements
       document_types:
         - news_article
         - news_story
@@ -399,6 +401,7 @@ content_purpose_subgroup:
         - world_news_story
         - fatality_notice
     - id: decisions
+      display_name: Decisions
       document_types:
         - tax_tribunal_decision
         - utaac_decision
@@ -409,6 +412,7 @@ content_purpose_subgroup:
         - cma_case
         - decision
     - id: speeches_and_statements
+      display_name: Speeches and statements
       document_types:
         - oral_statement
         - written_statement
@@ -417,6 +421,7 @@ content_purpose_subgroup:
         - speech
         - government_response
     - id: transactions
+      display_name: Services
       document_types:
         - completed_transaction
         - local_transaction
@@ -431,10 +436,12 @@ content_purpose_subgroup:
         - answer
         - guide
     - id: regulation
+      display_name: Regulation
       document_types:
         - regulation
         - statutory_instrument
     - id: guidance
+      display_name: Guidance
       document_types:
         - detailed_guide
         - manual
@@ -450,27 +457,32 @@ content_purpose_subgroup:
         - promotional
         - hmrc_manual
     - id: business_support
+      display_name: Business funds and grants
       document_types:
         - international_development_fund
         - countryside_stewardship_grant
         - esi_fund
         - business_finance_support_scheme
     - id: policy
+      display_name: Policy papers
       document_types:
         - impact_assessment
         - case_study
         - policy_paper
     - id: consultations
+      display_name: Consultations
       document_types:
         - open_consultation
         - closed_consultation
         - consultation_outcome
     - id: research
+      display_name: Research
       document_types:
         - dfid_research_output
         - independent_report
         - research
     - id: statistics
+      display_name: Statistics
       document_types:
         - statistics
         - national_statistics
@@ -480,13 +492,16 @@ content_purpose_subgroup:
         - statistical_data_set
         - official_statistics
     - id: transparency_data
+      display_name: Transparency data
       document_types:
         - transparency
         - corporate_report
     - id: freedom_of_information_releases
+      display_name: Freedom of information releases
       document_types:
         - foi_release
     - id: incidents
+      display_name: Incident reports
       document_types:
         - aaib_report
         - raib_report
@@ -498,6 +513,7 @@ content_purpose_supergroup:
   default: other
   items:
     - id: news_and_communications
+      display_name: News and communications
       document_types:
         - medical_safety_alert
         - drug_safety_update
@@ -522,6 +538,7 @@ content_purpose_supergroup:
         - speech
         - government_response
     - id: services
+      display_name: Services
       document_types:
         - completed_transaction
         - local_transaction
@@ -536,6 +553,7 @@ content_purpose_supergroup:
         - answer
         - guide
     - id: guidance_and_regulation
+      display_name: Guidance and regulation
       document_types:
         - regulation
         - detailed_guide
@@ -557,6 +575,7 @@ content_purpose_supergroup:
         - statutory_instrument
         - hmrc_manual
     - id: policy_and_engagement
+      display_name: Policy papers and consultations
       document_types:
         - impact_assessment
         - case_study
@@ -565,6 +584,7 @@ content_purpose_supergroup:
         - closed_consultation
         - consultation_outcome
     - id: research_and_statistics
+      display_name: Research and statistics
       document_types:
         - dfid_research_output
         - independent_report
@@ -577,6 +597,7 @@ content_purpose_supergroup:
         - statistical_data_set
         - official_statistics
     - id: transparency
+      display_name: Transparency and freedom of information releases
       document_types:
         - transparency
         - corporate_report

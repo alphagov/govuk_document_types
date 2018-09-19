@@ -27,4 +27,22 @@ describe GovukDocumentTypes do
       expect(supergroups.map { |g| g["id"] }).to eq(ids)
     end
   end
+
+  describe '.display_name' do
+    it 'returns a configured display name' do
+      supertype = "content_purpose_supergroup"
+      group = "policy_and_engagement"
+
+      name = GovukDocumentTypes.display_name(supertype: supertype, group: group)
+      expect("Policy papers and consultations").to eq(name)
+    end
+
+    it 'returns nil if the display name is not configured' do
+      supertype = "content_purpose_document_supertype"
+      group = "updates-and-alerts"
+
+      name = GovukDocumentTypes.display_name(supertype: supertype, group: group)
+      expect(nil).to eq(name)
+    end
+  end
 end
