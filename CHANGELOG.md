@@ -1,3 +1,8 @@
+# Unreleased
+
+* Configure display names for content_purpose supertypes
+* Lookup of document types that belong to a group within a supertype
+
 # 0.7.1
 
 * Add `hrmc_manual` format to `guidance` `content_purpose_subgroup`

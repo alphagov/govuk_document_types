@@ -5,12 +5,13 @@ of document types.
 
 https://docs.publishing.service.gov.uk/document-types.html
 
-This gem is only to be used in [publishing-api][publishing-api] and
-[rummager][rummager]. **Don't use it in your project**.
-
 ## Long term vision
 
-This gem is used to share the canonical list of supertypes between rummager and publishing-api. We're currently migrating to a new system of indexing where rummager gets all data from the publishing-api (via a message queue). Once that work is completed this repo should be retired and the canonical list should be moved to either [govuk-content-schemas][] for use in the publishing-api, or be moved into publishing-api directly.
+This gem is used to share the canonical list of supertypes between applications on
+GOV.UK. This used to be limited to publishing-api and rummager, but has now been
+expanded to allow other applications.  We found that relying on republishing affected
+content after any changes wasn't flexible enough to permit iteration of groups, or
+allowing other configuration of supertypes (such as display names) to be used.
 
 ## How to add a supertype
 
