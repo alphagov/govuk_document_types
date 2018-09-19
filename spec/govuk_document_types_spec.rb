@@ -45,4 +45,28 @@ describe GovukDocumentTypes do
       expect(nil).to eq(name)
     end
   end
+
+  describe '.document_types' do
+    it 'returns document types that belong to a group within a supertype' do
+      supertype = "content_purpose_supergroup"
+      group = "services"
+
+      document_types = GovukDocumentTypes.document_types(supertype: supertype, group: group)
+
+      expect(document_types).to eq(
+        %w(completed_transaction
+           local_transaction
+           form
+           calculator
+           smart_answer
+           simple_smart_answer
+           place
+           licence
+           step_by_step_nav
+           transaction
+           answer
+           guide)
+          )
+    end
+  end
 end

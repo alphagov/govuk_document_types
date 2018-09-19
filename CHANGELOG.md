@@ -1,6 +1,7 @@
 # Unreleased
 
 * Configure display names for content_purpose supertypes
+* Lookup of document types that belong to a group within a supertype
 
 # 0.7.1
 

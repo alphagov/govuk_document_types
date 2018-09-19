@@ -382,6 +382,8 @@ government_document_supertype:
         - government_response
 
 content_purpose_subgroup:
+  # This supertype is being iterated. Content items and search results may be out of date
+  # Speak to the content pages team for more information
   name: "Content Purpose Subgroup"
   description: "These are the new sub groups that came out of the research from the JTBD framework in Q4 by the navigation team and are used in the topic pages. These are the sub groups connected to the content_purpose_document_supergroup"
   default: other
@@ -508,6 +510,8 @@ content_purpose_subgroup:
         - maib_report
 
 content_purpose_supergroup:
+  # This supertype is being iterated. Content items and search results may be out of date
+  # Speak to the content pages team for more information
   name: "Content Purpose Supergroup"
   description: "These are the new supergroups that came out of the research from the JTBD framework in Q4 by the navigation team and are used in the topic pages."
   default: other
