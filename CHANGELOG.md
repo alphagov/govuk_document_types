@@ -1,3 +1,12 @@
+# 0.8.0
+
+* Adds `GovukDocumentTypes.supergroup_subgroups` as a way to retrieve
+  subgroups registered to the specified supergroups.
+* Adds `GovukDocumentTypes.supergroup_document_types` as a way to retrieve
+  document types registered to the specified supergroups.
+* Adds `GovukDocumentTypes.subgroup_document_types` as a way to retrieve
+  document types registered to the specified subgroups.
+
 # 0.7.1
 
 * Add `hrmc_manual` format to `guidance` `content_purpose_subgroup`
