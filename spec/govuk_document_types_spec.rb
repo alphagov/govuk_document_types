@@ -27,4 +27,44 @@ describe GovukDocumentTypes do
       expect(supergroups.map { |g| g["id"] }).to eq(ids)
     end
   end
+
+  describe '.supergroup_subgroups' do
+    it 'returns subgroups registered to the specified supergroups' do
+      subgroups = GovukDocumentTypes.supergroup_subgroups('policy_and_engagement')
+
+      expect(subgroups).to contain_exactly('policy', 'consultations')
+    end
+  end
+
+  describe '.supergroup_document_types' do
+    it 'returns document types registered to the specified supergroups' do
+      document_types = GovukDocumentTypes.supergroup_document_types('transparency')
+
+      expect(document_types)
+        .to contain_exactly(
+          'aaib_report',
+          'corporate_report',
+          'foi_release',
+          'maib_report',
+          'raib_report',
+          'transparency',
+        )
+    end
+  end
+
+  describe '.subgroup_document_types' do
+    it 'returns document types registered to the specified subgroups' do
+      document_types = GovukDocumentTypes.subgroup_document_types('policy', 'research')
+
+      expect(document_types)
+        .to contain_exactly(
+          'case_study',
+          'dfid_research_output',
+          'impact_assessment',
+          'independent_report',
+          'policy_paper',
+          'research',
+        )
+    end
+  end
 end
