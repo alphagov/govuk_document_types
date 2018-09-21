@@ -3,7 +3,7 @@ require "spec_helper"
 describe GovukDocumentTypes do
   describe 'supertypes.yml' do
     it "does not have duplicates across supertypes" do
-      GovukDocumentTypes::DATA.each do |supertype_name, definition|
+      GovukDocumentTypes::SUPERTYPES.each do |supertype_name, definition|
         all_supertypes = definition["items"].reduce([]) do |a, supertype|
           a + supertype["document_types"]
         end
@@ -17,13 +17,13 @@ describe GovukDocumentTypes do
     end
 
     it "defines a default supertype for all document types" do
-      GovukDocumentTypes::DATA.each do |name, definition|
+      GovukDocumentTypes::SUPERTYPES.each do |name, definition|
         expect(definition["default"]).not_to be_nil, "No default value provided for '#{name}'"
       end
     end
 
     it "reserves the default supertype for document types without a group" do
-      GovukDocumentTypes::DATA.each do |name, definition|
+      GovukDocumentTypes::SUPERTYPES.each do |name, definition|
         default = definition["default"]
         definition["items"].each do |supertype|
           expect(supertype.fetch("id")).not_to eql(default),
@@ -37,7 +37,7 @@ describe GovukDocumentTypes do
       schema_directory = ENV["GOVUK_CONTENT_SCHEMAS_PATH"] || "../govuk-content-schemas"
       allowed_document_types = YAML.load_file("#{schema_directory}/lib/govuk_content_schemas/allowed_document_types.yml")
 
-      document_types = GovukDocumentTypes::DATA.flat_map do |_name, definition|
+      document_types = GovukDocumentTypes::SUPERTYPES.flat_map do |_name, definition|
         definition["items"].flat_map do |supertype|
           supertype["document_types"]
         end
@@ -49,7 +49,7 @@ describe GovukDocumentTypes do
 
   describe "supergroups and subgroup document types" do
     supergroups_data = YAML.load_file(File.dirname(__FILE__) + "/../data/supergroups.yml")
-    supertypes_data = GovukDocumentTypes::DATA
+    supertypes_data = GovukDocumentTypes::SUPERTYPES
 
     it "tests that a supergroup contains the same document types as it's collective subgroups" do
       supergroups_with_subgroup_data(supergroups_data).each do |supergroup|

@@ -2,13 +2,13 @@ require "govuk_document_types/version"
 require "yaml"
 
 module GovukDocumentTypes
-  DATA = YAML.load_file(File.dirname(__FILE__) + "/../data/supertypes.yml")
+  SUPERTYPES = YAML.load_file(File.dirname(__FILE__) + "/../data/supertypes.yml")
   SUPERGROUPS = YAML.load_file(File.dirname(__FILE__) + "/../data/supergroups.yml")
 
   def self.supertypes(document_type:)
     types = {}
 
-    DATA.each do |name, definition|
+    SUPERTYPES.each do |name, definition|
       group_data = definition["items"].find do |supertype|
         supertype['document_types'].include?(document_type)
       end
