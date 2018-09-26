@@ -4,10 +4,11 @@ en:
     guidance_and_regulation: Guidance and regulation
     news_and_communications: News and communications
     policy_and_engagement: Policy papers and consultations
-    policy_papers_and_consultations: Policy papers and consultations
+    research_and_statistics: "Research and statistics"
     services: Services
-    transparency: Transparency
+    transparency: Transparency and freedom of information releases
   content_purpose_subgroup:
+    announcements: Announcements
     business_support: Business support
     consultations: Consultations
     decisions: Decisions
@@ -18,6 +19,8 @@ en:
     policy: Policy
     regulation: Regulation
     research: Research
+    safety_alerts: Safety alerts
+    services: Services
     speeches_and_statements: Speeches and statements
     statistics: Statistics
     transactions: Transactions
