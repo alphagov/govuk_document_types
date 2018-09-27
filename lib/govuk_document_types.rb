@@ -1,3 +1,4 @@
+require "govuk_document_types/translations_railtie" if defined?(Rails)
 require "govuk_document_types/version"
 require "yaml"
 
