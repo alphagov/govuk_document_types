@@ -161,8 +161,6 @@ content_purpose_document_supertype:
         # "Tags"
         - document_collection
         - mainstream_browse_page
-        - policy
-        - policy_area
         - taxon
         - topic
 
@@ -224,8 +222,6 @@ user_journey_document_supertype:
         - license_finder
         - mainstream_browse_page
         - organisation
-        - policy
-        - policy_area
         - search
         - service_manual_homepage
         - service_manual_topic
@@ -584,7 +580,3 @@ content_purpose_supergroup:
         - aaib_report
         - raib_report
         - maib_report
-
-
-
-
