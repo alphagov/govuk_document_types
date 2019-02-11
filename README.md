@@ -27,6 +27,7 @@ GovukDocumentTypes.supergroup_document_types("policy_and_engagement")
 
 1. Add it to [data/supertypes.yml](data/supertypes.yml) in this gem and release a new version
 2. Bump the gem version across GOV.UK apps using [Dependabot](https://app.dependabot.com/)
+3. Run the `rummager:update_supertypes` Rake task in Rummager to update the elasticsearch indices _after_ bumping the gem version in Rummager
 
 ## Running the test suite
 
