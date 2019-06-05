@@ -1,5 +1,7 @@
 # Unreleased
 
+* Removed `contact` from the guidance group.
+
 # 0.9.0
 
 * Add translations to content purpose supergroup titles
