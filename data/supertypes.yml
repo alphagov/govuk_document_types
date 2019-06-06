@@ -437,7 +437,6 @@ content_purpose_subgroup:
         - manual_section
         - guidance
         - map
-        - contact
         - calendar
         - statutory_guidance
         - notice
@@ -539,7 +538,6 @@ content_purpose_supergroup:
         - manual_section
         - guidance
         - map
-        - contact
         - calendar
         - statutory_guidance
         - notice
