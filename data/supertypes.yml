@@ -388,6 +388,7 @@ content_purpose_subgroup:
         - drug_safety_update
     - id: news
       document_types:
+        - case_study
         - news_article
         - news_story
         - press_release
@@ -453,7 +454,6 @@ content_purpose_subgroup:
     - id: policy
       document_types:
         - impact_assessment
-        - case_study
         - policy_paper
     - id: consultations
       document_types:
@@ -516,6 +516,7 @@ content_purpose_supergroup:
         - correspondence
         - speech
         - government_response
+        - case_study
     - id: services
       document_types:
         - completed_transaction
@@ -553,7 +554,6 @@ content_purpose_supergroup:
     - id: policy_and_engagement
       document_types:
         - impact_assessment
-        - case_study
         - policy_paper
         - open_consultation
         - closed_consultation
