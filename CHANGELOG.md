@@ -1,3 +1,7 @@
+# Unreleased
+
+* Moved `case_study` from policy papers and consultations to news and comms.
+
 # 0.9.1
 
 * Removed `contact` from the guidance group.
