@@ -1,3 +1,7 @@
+# 0.9.3
+
+* Added `standard` subtype to the guidance group
+
 # 0.9.2
 
 * Moved `case_study` from policy papers and consultations to news and comms.
