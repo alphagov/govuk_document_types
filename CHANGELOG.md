@@ -1,7 +1,8 @@
 # Unreleased
 
 * Remove deprecated supertypes
-
+* Add Flood & Coastal Erosion Risk Management Report (FCERM) Research Report to research supergroup
+    
 # 0.9.3
 
 * Added `standard` subtype to the guidance group

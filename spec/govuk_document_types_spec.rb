@@ -59,6 +59,7 @@ describe GovukDocumentTypes do
       expect(document_types)
         .to contain_exactly(
           'dfid_research_output',
+          'flood_and_coastal_erosion_risk_management_research_report',
           'impact_assessment',
           'independent_report',
           'policy_paper',
