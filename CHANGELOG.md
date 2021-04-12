@@ -1,3 +1,7 @@
+# Unreleased
+
+* Remove deprecated supertypes
+
 # 0.9.3
 
 * Added `standard` subtype to the guidance group
