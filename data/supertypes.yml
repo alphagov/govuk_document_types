@@ -237,6 +237,7 @@ content_purpose_subgroup:
     - id: research
       document_types:
         - dfid_research_output
+        - flood_and_coastal_erosion_risk_management_research_report
         - independent_report
         - research
     - id: statistics
@@ -336,6 +337,7 @@ content_purpose_supergroup:
     - id: research_and_statistics
       document_types:
         - dfid_research_output
+        - flood_and_coastal_erosion_risk_management_research_report
         - independent_report
         - research
         - statistics
