@@ -1,3 +1,7 @@
+# Unreleased
+
+* Remove Flood & Coastal Erosion Risk Management Report (FCERM) Research Report from research supergroup
+
 # 1.0.0
 
 * Remove deprecated supertypes
