@@ -1,7 +1,6 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'govuk_document_types/version'
+require "govuk_document_types/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "govuk_document_types"
@@ -18,10 +17,10 @@ Gem::Specification.new do |spec|
   end
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib"]
+  spec.require_paths = %w[lib]
 
+  spec.add_development_dependency "i18n-spec"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rubocop-govuk", "4.6.0"
-  spec.add_development_dependency "i18n-spec"
 end

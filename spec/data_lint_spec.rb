@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe GovukDocumentTypes do
-  describe 'supertypes.yml' do
+  describe "supertypes.yml" do
     it "does not have duplicates across supertypes" do
       GovukDocumentTypes::SUPERTYPES.each do |supertype_name, definition|
         all_supertypes = definition["items"].reduce([]) do |a, supertype|
@@ -27,8 +27,8 @@ describe GovukDocumentTypes do
         default = definition["default"]
         definition["items"].each do |supertype|
           expect(supertype.fetch("id")).not_to eql(default),
-            "'#{name}' defines a supertype name '#{default}', which clashes " +
-            "with the default supertype name"
+                                               "'#{name}' defines a supertype name '#{default}', which clashes " \
+                                                 "with the default supertype name"
         end
       end
     end
@@ -48,7 +48,7 @@ describe GovukDocumentTypes do
   end
 
   describe "supergroups and subgroup document types" do
-    supergroups_data = YAML.load_file(File.dirname(__FILE__) + "/../data/supergroups.yml")
+    supergroups_data = YAML.load_file("#{File.dirname(__FILE__)}/../data/supergroups.yml")
     supertypes_data = GovukDocumentTypes::SUPERTYPES
 
     it "tests that a supergroup contains the same document types as it's collective subgroups" do
