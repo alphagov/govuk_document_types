@@ -26,9 +26,8 @@ describe GovukDocumentTypes do
       GovukDocumentTypes::SUPERTYPES.each do |name, definition|
         default = definition["default"]
         definition["items"].each do |supertype|
-          expect(supertype.fetch("id")).not_to eql(default),
-                                               "'#{name}' defines a supertype name '#{default}', which clashes " \
-                                                 "with the default supertype name"
+          message = "'#{name}' defines a supertype name '#{default}', which clashes with the default supertype name"
+          expect(supertype.fetch("id")).not_to eql(default), message
         end
       end
     end
