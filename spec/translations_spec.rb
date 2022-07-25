@@ -1,13 +1,9 @@
 require "spec_helper"
 
-describe "A locale file" do
+describe "Locale files" do
   Dir.glob("rails/locale/*.yml") do |locale_file|
     it_behaves_like "a valid locale file", locale_file
-  end
-end
 
-describe "Translations of supertype group titles" do
-  Dir.glob("rails/locale/*.yml") do |locale_file|
     translations = YAML.load_file(locale_file)
 
     %w[content_purpose_supergroup content_purpose_subgroup].each do |supertype|
