@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = %w[lib]
 
   spec.add_development_dependency "i18n-spec"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "rubocop-govuk", "4.6.0"
 end
