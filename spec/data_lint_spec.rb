@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe GovukDocumentTypes do
+describe "Data lint" do
   describe "supertypes.yml" do
     it "does not have duplicates across supertypes" do
       GovukDocumentTypes::SUPERTYPES.each do |supertype_name, definition|
