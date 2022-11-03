@@ -165,7 +165,6 @@ content_purpose_subgroup:
         - news_article
         - news_story
         - press_release
-        - world_location_news_article
         - world_news_story
         - fatality_notice
     - id: decisions
@@ -273,7 +272,6 @@ content_purpose_supergroup:
         - news_article
         - news_story
         - press_release
-        - world_location_news_article
         - world_news_story
         - fatality_notice
         - tax_tribunal_decision
