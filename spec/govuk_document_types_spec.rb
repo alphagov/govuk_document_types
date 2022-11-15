@@ -22,7 +22,7 @@ describe GovukDocumentTypes do
   describe ".supergroup" do
     it "returns supergroups with matching ids" do
       ids = %w[news_and_communications services]
-      supergroups = described_class.supergroups(ids: ids)
+      supergroups = described_class.supergroups(ids:)
 
       expect(supergroups.map { |g| g["id"] }).to eq(ids)
     end
