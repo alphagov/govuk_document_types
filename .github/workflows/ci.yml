@@ -11,19 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Clone govuk-content-schemas
+      - name: Clone publishing-api for content schemas
         uses: actions/checkout@v2
         with:
-          repository: alphagov/govuk-content-schemas
+          repository: alphagov/publishing-api
           ref: deployed-to-production
-          path: tmp/govuk-content-schemas
+          path: tmp/publishing-api
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true
       - run: bundle exec rake
         env:
-          GOVUK_CONTENT_SCHEMAS_PATH: tmp/govuk-content-schemas
+          GOVUK_CONTENT_SCHEMAS_PATH: tmp/publishing-api/content_schemas
 
   # Branch protection rules cannot directly depend on status checks from matrix jobs.
   # So instead we define `test` as a dummy job which only runs after the preceding `test_matrix` checks have passed.
