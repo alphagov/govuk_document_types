@@ -33,16 +33,13 @@ describe "Data lint" do
     end
 
     it "contains only valid document types" do
-      schema_directory = ENV["GOVUK_CONTENT_SCHEMAS_PATH"] || "../govuk-content-schemas"
-      allowed_document_types = YAML.load_file("#{schema_directory}/lib/govuk_content_schemas/allowed_document_types.yml")
-
       document_types = GovukDocumentTypes::SUPERTYPES.flat_map do |_name, definition|
         definition["items"].flat_map do |supertype|
           supertype["document_types"]
         end
       end
 
-      expect(document_types - allowed_document_types).to eql([])
+      expect(document_types - GovukSchemas::DocumentTypes.valid_document_types).to eql([])
     end
   end
 
