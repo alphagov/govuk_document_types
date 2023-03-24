@@ -1,3 +1,7 @@
+# Unreleased
+
+* Drop support for Ruby 2.7.
+
 # 1.0.1
 
 * Remove Flood & Coastal Erosion Risk Management Report (FCERM) Research Report from research supergroup
