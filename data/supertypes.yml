@@ -27,6 +27,9 @@ email_document_supertype:
   items:
     - id: "publications"
       document_types:
+        - call_for_evidence
+        - call_for_evidence_outcome
+        - closed_call_for_evidence
         - closed_consultation
         - consultation
         - consultation_outcome
@@ -43,6 +46,7 @@ email_document_supertype:
         - national_statistics
         - notice
         - official_statistics
+        - open_call_for_evidence
         - open_consultation
         - policy_paper
         - promotional
@@ -69,6 +73,12 @@ government_document_supertype:
   # we expect that everything should be mapped to a valid supertype.
   default: other
   items:
+    - id: calls-for-evidence
+      document_types:
+        - call_for_evidence
+        - open_call_for_evidence
+        - call_for_evidence_outcome
+        - closed_call_for_evidence
     - id: consultations
       document_types:
         - consultation
@@ -256,6 +266,11 @@ content_purpose_subgroup:
         - aaib_report
         - raib_report
         - maib_report
+    - id: calls_for_evidence
+      document_types:
+        - open_call_for_evidence
+        - closed_call_for_evidence
+        - call_for_evidence_outcome
 
 content_purpose_supergroup:
   name: "Content Purpose Supergroup"
@@ -326,6 +341,9 @@ content_purpose_supergroup:
         - open_consultation
         - closed_consultation
         - consultation_outcome
+        - open_call_for_evidence
+        - closed_call_for_evidence
+        - call_for_evidence_outcome
     - id: research_and_statistics
       document_types:
         - independent_report
