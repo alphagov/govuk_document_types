@@ -21,6 +21,7 @@ content_purpose_supergroup:
       subgroups:
         - policy
         - consultations
+        - calls_for_evidence
     - id: research_and_statistics
       subgroups:
         - research

@@ -32,7 +32,7 @@ describe GovukDocumentTypes do
     it "returns subgroups registered to the specified supergroups" do
       subgroups = described_class.supergroup_subgroups("policy_and_engagement")
 
-      expect(subgroups).to contain_exactly("policy", "consultations")
+      expect(subgroups).to contain_exactly("policy", "consultations", "calls_for_evidence")
     end
   end
 
