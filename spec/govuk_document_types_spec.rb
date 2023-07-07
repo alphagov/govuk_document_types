@@ -58,7 +58,6 @@ describe GovukDocumentTypes do
 
       expect(document_types)
         .to contain_exactly(
-          "dfid_research_output",
           "impact_assessment",
           "independent_report",
           "policy_paper",

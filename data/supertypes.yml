@@ -162,7 +162,6 @@ content_purpose_subgroup:
     - id: news
       document_types:
         - case_study
-        - news_article
         - news_story
         - press_release
         - world_news_story
@@ -190,7 +189,6 @@ content_purpose_subgroup:
         - completed_transaction
         - local_transaction
         - form
-        - calculator
         - smart_answer
         - simple_smart_answer
         - place
@@ -235,7 +233,6 @@ content_purpose_subgroup:
         - consultation_outcome
     - id: research
       document_types:
-        - dfid_research_output
         - independent_report
         - research
     - id: statistics
@@ -269,7 +266,6 @@ content_purpose_supergroup:
       document_types:
         - medical_safety_alert
         - drug_safety_update
-        - news_article
         - news_story
         - press_release
         - world_news_story
@@ -294,7 +290,6 @@ content_purpose_supergroup:
         - completed_transaction
         - local_transaction
         - form
-        - calculator
         - smart_answer
         - simple_smart_answer
         - place
@@ -333,7 +328,6 @@ content_purpose_supergroup:
         - consultation_outcome
     - id: research_and_statistics
       document_types:
-        - dfid_research_output
         - independent_report
         - research
         - statistics
