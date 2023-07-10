@@ -1,6 +1,7 @@
 # Unreleased
 
-* Drop support for Ruby 2.7.
+* BREAKING: Drop support for Ruby 2.7 ([PR #89](https://github.com/alphagov/govuk_document_types/pull/89))
+* Added new call for evidence document type to supertypes and group ([PR #91](https://github.com/alphagov/govuk_document_types/pull/91))
 
 # 1.0.1
 
