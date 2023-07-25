@@ -7,7 +7,7 @@ describe "Locale files" do
     translations = YAML.load_file(locale_file)
 
     %w[content_purpose_supergroup content_purpose_subgroup].each do |supertype|
-      context "The #{supertype} supertype in #{locale_file}" do
+      context "when the #{supertype} supertype in #{locale_file}" do
         group_ids = GovukDocumentTypes::SUPERTYPES[supertype]["items"].map { |item| item["id"] }
 
         group_ids.each do |group_id|
