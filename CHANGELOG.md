@@ -1,3 +1,8 @@
+# Unreleased
+
+* Drop support for Ruby 3.0. The minimum required Ruby version is now 3.1.4.
+* Add support for Ruby 3.3.
+
 # 2.0.0
 
 * BREAKING: Drop support for Ruby 2.7 ([PR #89](https://github.com/alphagov/govuk_document_types/pull/89))
