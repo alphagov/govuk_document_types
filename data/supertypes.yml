@@ -17,7 +17,6 @@ user_journey_document_supertype:
         - service_manual_topic
         - services_and_information
         - taxon
-        - topic
         - topical_event
 
 email_document_supertype:
