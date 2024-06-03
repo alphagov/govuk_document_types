@@ -1,6 +1,7 @@
-# Unreleased
+# 3.0.0
 
 * BREAKING: Remove specialist topics ([PR #108](https://github.com/alphagov/govuk_document_types/pull/108))
+* Drop support for Ruby 3.0
 
 # 2.0.0
 
