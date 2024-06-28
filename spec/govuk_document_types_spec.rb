@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe GovukDocumentTypes do
   it "has a version number" do
-    expect(GovukDocumentTypes::VERSION).not_to be nil
+    expect(GovukDocumentTypes::VERSION).not_to be_nil
   end
 
   describe ".supertypes" do
