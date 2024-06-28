@@ -3,15 +3,13 @@ require "spec_helper"
 describe "Data lint" do
   describe "supertypes.yml" do
     it "does not have duplicates across supertypes" do
-      GovukDocumentTypes::SUPERTYPES.each do |supertype_name, definition|
+      GovukDocumentTypes::SUPERTYPES.each_value do |definition|
         all_supertypes = definition["items"].reduce([]) do |a, supertype|
           a + supertype["document_types"]
         end
 
         all_supertypes.uniq.each do |e|
-          next if all_supertypes.count(e) == 1
-
-          raise "The document type '#{e}' occurs in multiple groups in #{supertype_name}"
+          expect(all_supertypes.count(e)).to eq(1)
         end
       end
     end

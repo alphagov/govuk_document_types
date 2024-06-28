@@ -13,7 +13,7 @@ describe "Locale files" do
         group_ids.each do |group_id|
           it "has a title for the #{group_id} group" do
             group_title_translation = translations["en"][supertype][group_id]
-            expect(group_title_translation).not_to be(nil), "Couldn't find translation for #{supertype}.#{group_id}"
+            expect(group_title_translation).not_to be_nil, "Couldn't find translation for #{supertype}.#{group_id}"
           end
         end
       end
