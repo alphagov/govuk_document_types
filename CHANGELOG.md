@@ -1,4 +1,4 @@
-# Unreleased
+# 3.1.0
 
 * Drop support for Ruby 3.1, keep supporting Ruby 3.2, use Ruby 3.3 as default https://github.com/alphagov/govuk_document_types/pull/120
 
